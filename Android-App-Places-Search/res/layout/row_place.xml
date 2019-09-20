@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dip"
+        android:padding="3dip">
+
+        <ImageView
+            android:id="@+id/placeIcon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/placeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:gravity="center"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:singleLine="true"/>
+
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/placeAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeName"
+        android:layout_marginTop="1dip"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..."
+        android:textColor="#343434"
+        android:textSize="10sp"
+        android:singleLine="true"/>
+
+    <!-- Rightend Arrow -->
+    <CheckBox
+        android:id="@+id/favoritePlaceCheckBox"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:button="@drawable/heart_checkbox"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Places Search</string>
+    <string name="searchTabHeading"><vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportHeight="24" android:viewportWidth="24">
+<path android:fillColor="#fff" android:pathData="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+</vector> Search</string>
+    <string name="favoritesTabHeading">Favorites</string>
+    <string name="action_settings">Settings</string>
+    <string name="keywordLabel">Keyword</string>
+    <string name="keywordHint">Enter keyword</string>
+
+    <string name="categoryLabel">Category</string>
+    <string-array name="cat_array">
+        <item>Default</item>
+        <item>Airport</item>
+        <item>Amusement Park</item>
+        <item>Aquarium</item>
+        <item>Art Gallery</item>
+        <item>Bakery</item>
+        <item>Bar</item>
+        <item>Beauty Salon</item>
+        <item>Bowling Alley</item>
+        <item>Bus Station</item>
+        <item>Cafe</item>
+        <item>Campground</item>
+        <item>Car Rental</item>
+        <item>Casino</item>
+        <item>Lodging</item>
+        <item>Movie Theatre</item>
+        <item>Museum</item>
+        <item>Night Club</item>
+        <item>Park</item>
+        <item>Parking</item>
+        <item>Restaurant</item>
+        <item>Shopping Mall</item>
+        <item>Stadium</item>
+        <item>Subway Station</item>
+        <item>Taxi Stand</item>
+        <item>Train Station</item>
+        <item>Transit Station</item>
+        <item>Travel Agency</item>
+        <item>zoo</item>
+    </string-array>
+
+
+    <string name="distanceLabel">Distance (in miles)</string>
+    <string name="distanceHint">Enter distance (default 10 miles)</string>
+
+    <string name="fromLabel">From</string>
+    <string name="currentLocationLabel">Current location</string>
+    <string name="otherLocationLabel">Other Specify Location</string>
+
+    <string name="inputLocationHint">Type in the Location</string>
+
+    <string name="searchButtonLabel">Search</string>
+    <string name="clearButtonLabel">Clear</string>
+
+
+    <string name="section_format"></string>
+    <string name="mandatoryFieldError">Please enter mandatory field</string>
+    <string name="invalidForm">Please fix all fields with errors</string>
+    <string name="title_activity_search_results">Search Results</string>
+    <string name="title_activity_place">PlaceActivity</string>
+</resources>

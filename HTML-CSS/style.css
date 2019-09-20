@@ -1,0 +1,367 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+        
+        
+        
+}
+.para{
+    margin-left:170px;
+    margin-top: 30px;
+    color:#4A5150 ;
+        font-size:75%;
+        font-family: Helvetica;
+        font-weight: 80;
+    
+    
+}
+#para{
+    margin-left:170px;
+    margin-top: 5px;
+    color:#4A5150 ;
+        font-size:75%;
+        font-family: Helvetica;
+        font-weight: 80;
+}
+
+
+h1{
+    
+    padding-top:10px;
+    padding-bottom:46px;
+    font-size:327%;
+    color:#c09d52;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-left:420px;
+    letter-spacing:10px;
+
+}
+hr{
+    background-color:#f4f4f4;
+    height:1px;
+    border:0;
+}
+ul{
+    margin-bottom:4px;
+    list-style-type:none;
+    padding:17px;
+
+}
+li{
+    float:left;
+  }
+li a{
+    display: inline-block;
+    color:#4A5150 ;
+    text-align: center;
+    text-decoration: none;
+    color:#4A5150 ;
+        font-size:75%;
+        font-family: Helvetica;
+        font-weight: 80;
+
+}
+ul li#h a{
+    color:#c29c59;
+    margin-left:130px;
+}
+ul li#a a{
+    margin-left:130px;
+    position:relative;
+}
+ul li#b a{
+    margin-left:115px;
+    position:relative;
+}
+ul li#c a{
+    margin-left:120px;
+    position:relative;
+}
+ul li#d a{
+     margin-left:150px;
+    position:relative;
+}
+
+ .sub1{
+    
+    background-image: url("http://cs-server.usc.edu:45678/hw/hw3/images/image6.jpg");
+    padding-bottom: 358px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position:-333px 64px ;
+    background-size:1724px;
+     height:227px;
+     width:1060px;
+     margin-left:0px;
+}
+
+ul li#left {
+    margin-left:100px;
+    margin-top:98px;
+    position:relative;
+
+}
+ul li#left .img2{
+    padding-top: 40px;
+    
+}
+
+ul li#left .fresh{
+    font-size:210%;
+    font-family: serif;
+    font-weight: 10;
+    color:#c09d52;
+    font-style:italic;
+    letter-spacing: 1px;
+    padding-top:70px;
+    
+}
+ul li#left .sup{
+    margin-top:20px;
+    letter-spacing: 1px;
+        font-family:Helvetica;
+        font-weight:4000;
+        color:#4A5150 ;
+    font-size:80%;
+    font-weight:500;
+    background-color:white;
+    
+    
+}
+ul li#left .button2{
+    
+    cursor:pointer;
+    margin-top:15px;
+    margin-left:-10px;
+    font-size:123%;
+    border:0;
+    padding:10px;
+    color:black;
+
+}
+ul li#left .button2:hover{
+    
+    color:silver;
+
+}
+
+
+ul li#right {
+    margin-top:18px;
+    position:absolute;
+
+}
+ul li#right .res{
+        margin-left:530px;
+
+    font-size:60%;
+    font-family: sans-serif;
+    font-weight: 10;
+    letter-spacing: 2px;
+        color:#4A5150 ;
+
+    
+}
+ul li#right .local1{
+    margin-left:530px;    
+    padding-top:20px;
+    font-size:210%;
+    font-family: serif;
+    font-weight: 10;
+    color:#c29c59;
+    font-style:italic;
+    letter-spacing: 1px;
+    padding-left:0px;
+    
+    
+}
+ ul li#right .local2{
+         margin-left:530px;
+    font-size:210%;
+    font-family: serif;
+    font-weight: 10;
+    color:#c29c59;
+    font-style:italic;
+    letter-spacing: 1px;
+    
+}
+br{
+    display:block;
+    margin: 3px 0;
+    line-height:5px;
+}
+ul li#right .pine{
+    margin-left:530px;
+    margin-top:15px;
+    letter-spacing: 1px;
+        font-family: Helvetica;
+        color:#4A5150 ;
+    font-size:80%;
+    font-weight:500;
+
+    
+    
+}
+ul li#right .button1{
+        margin-left:530px;
+        margin-top:15px;
+        color:black;
+        font-weight:570;
+        font-size:127%;
+        padding:0;
+        border: none;
+        cursor:pointer;
+        background-color:white;
+        font-size:Helvetica;
+
+    
+}
+ul li#right .button1:hover{
+    
+     color:silver;
+    
+    
+}
+
+ul li#right .img1{
+    
+    margin-left:520px;
+    margin-top:70px;
+    
+}
+ul li#right .img4{
+    
+    margin-left:520px;
+    margin-top:40px;
+    
+}
+.img7{
+    margin-left:120px;
+    margin-top:1075px;
+    position: relative;
+   
+}
+span p{
+    position:absolute;
+    top:203px;
+    left:248px;
+    background-color:white;
+    color:black;
+    padding-left:356px;
+    padding-bottom:1px;
+    width:272px;
+}
+#t1{
+    font-size:65%;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color:#4A5150 ;
+    padding-left:73px;
+    padding-top:43px;
+    
+    
+}
+
+.bt {
+    background-color: white;
+    color:#4A5150;
+    font-family: georgia Helvetica;
+    border:none;
+    font-size: 200%;
+    cursor: pointer;
+    position:absolute;
+    top:241px;
+    left:248px;
+    width:345px;
+    padding:24px;
+    
+}
+.bt:hover{
+    color:silver;
+}
+
+.img5{
+    background-image: url("http://cs-server.usc.edu:45678/hw/hw3/images/image5.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+    min-height:470px;
+    background-position: 0% 37%;
+}
+ 
+.footer{
+    background-color:#c09d52;
+    padding-bottom:80px;
+    margin-bottom:20px;
+    border-color: #c29c59;
+    width:1060px;
+    color:white;
+    
+}
+.f1{
+    letter-spacing: 1px;
+    font-family:Helvetica;
+    font-size:80%;
+    font-weight:500;
+    padding-left:660px;
+    padding-top: 60px;
+}
+.f2{
+    letter-spacing: 1px;
+    font-family:Helvetica;
+    padding-left:660px;
+    font-size:80%;
+    font-weight:500;
+}
+
+#gog{
+    padding-top:26px;
+    letter-spacing: 1px;
+    font-family:Helvetica;
+    font-size:80%;
+    font-weight:500;
+    margin-left:457px;
+}
+#love{
+    
+    margin-top:27px;
+    padding-left:150px;
+    font-size:190%;
+    font-family: serif;
+    font-weight: 10;
+    color:#c09d52;
+    font-style:italic;
+    
+    
+}
+.lo{
+    
+    margin-top:7px;
+    padding-left:420px;
+    font-size:190%;
+    font-family: serif;
+    font-weight: 10;
+    color:#c09d52;
+    font-style:italic;
+    
+    
+}
+.th{
+    
+    margin-top:7px;
+    padding-left:180px;
+    font-size:190%;
+    font-family: serif;
+    font-weight: 10;
+    color:#c09d52;
+    font-style:italic;
+    margin-bottom:70px;
+    
+    
+}
+

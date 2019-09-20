@@ -1,0 +1,222 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+ <style>
+    
+     #centre{
+         
+         margin-top: 130px;
+         margin-left:430px;
+     }  
+    
+     #text{
+         margin-left:150px;
+     }
+     #btn{
+         margin-left:210px;
+         background-color:white;
+     }
+    
+</style>  
+    <script language="javascript">
+
+
+        
+function viewJSON(what)
+{
+    var URL = what.URL.value; 
+    
+    
+    if (window.XMLHttpRequest)
+    {  
+        xmlhttp=new XMLHttpRequest();
+    } 
+    
+  try{  
+   xmlhttp.open("GET",URL,false); 
+   xmlhttp.send();
+  
+         
+        try{
+            jsonObj= JSON.parse(xmlhttp.responseText);
+
+             var json_keys=Object.keys(jsonObj);
+    
+ if(json_keys.length>0){
+    
+        
+    planes=jsonObj.Mainline.Table.Header.Data;
+         
+
+        
+       var header_keys = Object.keys(planes); 
+              
+        
+      if(header_keys.length>0){
+        
+           
+           planes=jsonObj.Mainline.Table.Row;
+           
+            try{
+            var row_keys = Object.keys(planes); 
+            
+           
+    jsonObj.onload=generateHTML(jsonObj);  
+    hWin = window.open("","_about", 'scrollbars=yes, height=770,width=888'); 
+    hWin.document.write(html_text); 
+
+    hWin.document.close();
+           }
+           catch(error){
+             alert("error detected :row keys missing");  
+            }
+       }
+         else{
+             alert("error detected :header values missing");  
+            }
+        
+        
+    }
+    else{
+        alert("error detected :JSON file schema");
+    }
+        }
+        catch(error){
+            alert("error detected :Enter a proper JSON file");
+        }
+    }
+        catch(error)
+       {
+            alert("error detected :file doesnot exist");
+        }
+            
+ }
+   
+             
+    
+    
+
+  
+
+    
+    
+
+        
+        
+
+function generateHTML(jsonObj) 
+{
+   
+    
+    planes=jsonObj.Mainline.Table.Header.Data;
+    
+html_text="<html><head><title>Top Trucking Companies</title></head><body>";
+    html_text+="<table border='2' height='600' width='888' >";
+    
+    html_text+="<tbody>";
+    
+    var header_keys = Object.keys(planes); 
+    
+         
+    
+    
+html_text+="<tr>"; 
+    
+    for(i=0;i<header_keys.length;i++) 
+    {   
+        
+    
+    html_text+="<th>"+planes[i]+"</th>";
+    
+   
+    }
+    
+html_text+="</tr>";
+    
+    planes=jsonObj.Mainline.Table.Row;
+    
+    
+
+  
+
+    for(i=0;i<planes.length;i++) 
+    {       
+           
+    planeNodeList=planes[i]; 
+
+    html_text+="<tr>"; 
+    
+    var row_keys = Object.keys(planeNodeList); 
+        
+        
+
+    for(j=0;j<row_keys.length;j++)
+    {
+    prop = row_keys[j];
+    
+    if(row_keys[j]=="Logo")
+    {
+        html_text+="<td><img src='"+ planeNodeList[prop]+ "' width='"+400+"' height='"+200+"'></td>";
+    }
+    else if(row_keys[j]=='HomePage')
+    {
+         html_text+="<td><a href='"+ planeNodeList[prop]+"'>"+planeNodeList[prop]+"</td>";
+    }
+    else if(row_keys[j]=="Hubs")
+    {   
+       hub=planes[i].Hubs.Hub;
+     
+    var h_keys=Object.keys(hub); 
+    
+        html_text+="<td><ul>";
+        
+     for(k=0; k<h_keys.length;k++)
+     {   
+         hubs=h_keys[k];
+         
+         if(k==0)
+        html_text+="<li><b>"+hub[hubs] +"</b></li>";         
+        else
+        html_text+="<li>"+hub[hubs] +"</li>";         
+    
+     }
+     html_text+="</ul></td>";
+
+    }
+    else 
+    {
+        html_text+="<td>"+ planeNodeList[prop] +"</td>";
+    } 
+    }
+    html_text+="</tr>"; 
+}
+
+        
+   
+    html_text+="</tbody>"; 
+    html_text+="</table>";
+    html_text+="</body></html>";
+       
+}
+
+</script>
+</head>
+    
+<body>
+    
+<div id="centre">   
+<h1>Enter URL for Trucking List JSON File </h1>
+<form name="myform" method="POST" id="location">
+    <div id="text">
+<input type="text" name="URL" maxlength="255" size="30" value="truckinglist.json"/>
+    </div>
+<br />
+<div id="btn">
+<input type="button" name="submit" value="Submit Query" onClick="viewJSON(this.form)" />
+        </div>
+</form>
+ 
+        </div>   
+</body>
+</html>
